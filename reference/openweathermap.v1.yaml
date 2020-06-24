@@ -156,6 +156,12 @@ paths:
                           type: string
                           description: Weather icon id
                           example: 04n
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/unauthorized_response'
       operationId: get-weather
       description: 'Access current weather data for any location on Earth including over 200,000 cities! Current weather is frequently updated based on global models and data from more than 40,000 weather stations.'
       security:
@@ -167,7 +173,19 @@ paths:
           name: zip
           description: '**Zip code**. Search by zip code. *Example: 95050,us*. Please note that if the country is not specified, the search uses USA as a default.'
 components:
-  schemas: {}
+  schemas:
+    unauthorized_response:
+      title: 401
+      type: object
+      x-examples: {}
+      properties:
+        cod:
+          type: integer
+        message:
+          type: string
+      required:
+        - cod
+        - message
   securitySchemes:
     app_id:
       name: appid
