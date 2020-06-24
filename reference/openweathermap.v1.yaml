@@ -68,48 +68,48 @@ paths:
                         example: 8166
                       country:
                         type: string
-                        description: '‘Country code (GB, JP etc.)’'
+                        description: 'Country code (GB, JP etc.)'
                         example: AU
                       sunrise:
                         type: number
-                        description: '‘Sunrise time, unix, UTC’'
+                        description: 'Sunrise time, unix, UTC'
                         example: 1435610796
                       sunset:
                         type: number
-                        description: '‘Sunset time, unix, UTC’'
+                        description: 'Sunset time, unix, UTC'
                         example: 1435650870
                   dt:
                     type: number
-                    description: '‘Time of data calculation, unix, UTC’'
+                    description: 'Time of data calculation, unix, UTC'
                     example: 1435658272
                   clouds:
                     type: object
                     properties:
                       all:
                         type: number
-                        description: '‘Cloudiness, %’'
+                        description: 'Cloudiness, %'
                         example: 75
                   wind:
                     type: object
                     properties:
                       speed:
                         type: number
-                        description: '‘Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.’'
+                        description: 'Wind speed. Unit Default: meter/sec, Metric: meter/sec, Imperial: miles/hour.'
                         example: 5.1
                       deg:
                         type: number
-                        description: '‘Wind direction, degrees (meteorological)’'
+                        description: 'Wind direction, degrees (meteorological)'
                         example: 150
                   visibility:
                     type: number
-                    description: '‘Visibility, meter’'
+                    description: 'Visibility, meter'
                     example: 16093
                   main:
                     type: object
                     properties:
                       temp:
                         type: number
-                        description: '‘Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.’'
+                        description: 'Temperature. Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.’'
                         example: 293.25
                       feels_like:
                         type: number
@@ -117,19 +117,19 @@ paths:
                         example: 41.16
                       temp_min:
                         type: number
-                        description: '‘Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.’'
+                        description: 'Minimum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
                         example: 289.82
                       temp_max:
                         type: number
-                        description: '‘Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.’'
+                        description: 'Maximum temperature at the moment. This is deviation from current temp that is possible for large cities and megalopolises geographically expanded (use these parameter optionally). Unit Default: Kelvin, Metric: Celsius, Imperial: Fahrenheit.'
                         example: 295.37
                       pressure:
                         type: number
-                        description: '‘Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa’'
+                        description: 'Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa'
                         example: 1019
                       humidity:
                         type: number
-                        description: '‘Humidity, %’'
+                        description: 'Humidity, %'
                         example: 83
                   base:
                     type: string
@@ -146,7 +146,7 @@ paths:
                           example: 803
                         main:
                           type: string
-                          description: '‘Group of weather parameters (Rain, Snow, Extreme etc.)’'
+                          description: 'Group of weather parameters (Rain, Snow, Extreme etc.)'
                           example: clouds
                         description:
                           type: string
